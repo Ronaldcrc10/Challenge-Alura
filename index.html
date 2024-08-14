@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="image_logo" src="./assets/Logo.png" alt="Logo">
+    </header>
+    <main class="main-content column">
+        <div class="container">
+            <h1>Encriptador de Texto</h1>
+            <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <textarea id="outputText" readonly placeholder="Resultado"></textarea>
+        </div>
+        
+        <img class="presentacion_imagen" id="triggerButton" src="./assets/imagen.png" alt="Imagen"> 
+        <button id="copyPasteButton" class="hidden" onclick="copyText()">Copiar y Pegar</button>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Ronald Collo 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
